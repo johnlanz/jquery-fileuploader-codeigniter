@@ -34,8 +34,9 @@ class Upload extends CI_Controller {
 			echo '<div id="status">success</div>';
 			//then output your message (optional)
 			echo '<div id="message">'. $data['upload_data']['file_name'] .' Successfully uploaded.</div>';
-			echo '<pre>';
-			print_r($data);
+			//pass the data to js
+			echo '<div id="upload_data">'. json_encode($data) . '</div>';
+			
 		}
 	}
 }

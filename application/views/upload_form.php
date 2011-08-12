@@ -44,7 +44,11 @@ h2 {
 	
 	<script type="text/javascript">
 		jQuery(function($){
-			$('.fileUpload').fileUploader();
+			$('.fileUpload').fileUploader({
+				afterEachUpload: function(data, status, formContainer){
+					$jsonData = $.parseJSON( $(data).find('#upload_data').text() );
+				}
+			});
 		});
 	</script>
 	
