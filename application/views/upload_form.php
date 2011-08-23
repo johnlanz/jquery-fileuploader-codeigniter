@@ -45,6 +45,7 @@ h2 {
 	<script type="text/javascript">
 		jQuery(function($){
 			$('.fileUpload').fileUploader({
+				allowedExtension: 'jpg|jpeg|gif|png|zip|avi',
 				afterEachUpload: function(data, status, formContainer){
 					$jsonData = $.parseJSON( $(data).find('#upload_data').text() );
 				}
