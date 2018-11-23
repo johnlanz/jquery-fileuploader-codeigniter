@@ -1,8 +1,3 @@
-jQuery Auto Populate Box
-http://pixelcone.com/autopopulatebox/
-
-Fileuploader Documentation:
-http://pixelcone.com/fileuploader/
 
 Tutorial:
 Fileuploader tutorial are based on Codeigniter File Uploading Class: 
